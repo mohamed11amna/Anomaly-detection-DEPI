@@ -1,3 +1,6 @@
+pip==25.3.0
+setuptools==68.0.0
+
 # --- Web App ---
 streamlit==1.38.0
 requests==2.32.3

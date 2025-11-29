@@ -21,7 +21,13 @@ import os
 # ==============================
 st.set_page_config(page_title="Multimodal AI Detector", layout="wide")
 
-with open("style.css") as f:
+import os
+
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+css_path = os.path.join(current_dir, "style.css")
+
+with open(css_path) as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 st.markdown("<div class='title'>Multimodal AI Detector</div>", unsafe_allow_html=True)

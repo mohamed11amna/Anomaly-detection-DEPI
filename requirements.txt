@@ -1,32 +1,17 @@
-pip==25.3.0
-setuptools==68.0.0
+--extra-index-url https://download.pytorch.org/whl/cpu
 
-# --- Web App ---
-streamlit==1.38.0
-requests==2.32.3
-beautifulsoup4==4.12.3
-
-# --- Image Processing ---
-Pillow==10.4.0
+streamlit
+requests
+beautifulsoup4
+Pillow
 torch
 torchvision
-
-# --- Text / NLP ---
-transformers==4.44.0
-regex==2024.7.24
-
-# --- ML / Deep Learning ---
+transformers
+regex
 tensorflow
-keras==3.3.3
-joblib==1.4.2
-scikit-learn==1.5.1
-numpy==1.26.4
-pandas==2.2.2
-
-# --- Network / Packets ---
-scapy==2.5.0
-
-# --- Utility ---
-io
-re
-os
+keras
+joblib
+scikit-learn
+numpy
+pandas
+scapy

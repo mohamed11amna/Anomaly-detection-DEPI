@@ -36,12 +36,14 @@ st.markdown("<div class='subtitle'>Detect AI-generated content from Text, Images
 # ==============================
 # Path Config
 # ==============================
-packetModel = r"C:\games\git\Anomaly-detection-DEPI\models\UNSW-NB15\autoencoder_full_model.h5"
-nlpModel = r'C:\games\git\Anomaly-detection-DEPI\models\AI vs Real Text\bert_model'
-imageModel = r'C:\games\git\Anomaly-detection-DEPI\models\AI vs Real images\convnext_ai_vs_human.pth'
-scalerPKL1 = r'C:\games\git\Anomaly-detection-DEPI\data\UNSW-NB15\processed\scaler.pkl'
-featureColumns = r'C:\games\git\Anomaly-detection-DEPI\data\UNSW-NB15\processed\feature_columns.npy'
+current_dir = os.path.dirname(os.path.abspath(__file__))
+root_dir = os.path.abspath(os.path.join(current_dir, '..', '..'))
 
+packetModel = os.path.join(root_dir, "models", "UNSW-NB15", "autoencoder_full_model.h5")
+nlpModel = os.path.join(root_dir, "models", "AI vs Real Text", "bert_model")
+imageModel = os.path.join(root_dir, "models", "AI vs Real images", "convnext_ai_vs_human.pth")
+scalerPKL1 = os.path.join(root_dir, "data", "UNSW-NB15", "processed", "scaler.pkl")
+featureColumns = os.path.join(root_dir, "data", "UNSW-NB15", "processed", "feature_columns.npy")
 # ==============================
 # Load Models (Cached)
 # ==============================

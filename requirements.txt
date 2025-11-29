@@ -16,7 +16,7 @@ transformers==4.44.0
 regex==2024.7.24
 
 # --- ML / Deep Learning ---
-tensorflow==2.16.1
+tensorflow
 keras==3.3.3
 joblib==1.4.2
 scikit-learn==1.5.1

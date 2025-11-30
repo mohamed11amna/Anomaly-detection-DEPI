@@ -109,7 +109,8 @@ except Exception as e:
 def load_all_models_in_memory():
     # 1. Load Packet Model (From Downloaded File)
     if os.path.exists(packetModelPath):
-        packet_model = load_model(packetModelPath)
+        # compile=False prevents the error by ignoring metrics/optimizers
+        packet_model = load_model(packetModelPath, compile=False) 
     else:
         st.error("Packet model not found. Check Google Drive link.")
         st.stop()
